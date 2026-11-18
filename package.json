@@ -1,0 +1,10 @@
+{
+  "name": "mongodb-scenario-a3-employee-indexes",
+  "version": "1.0.0",
+  "description": "MongoDB Scenario A3: Employee Directory Indexing",
+  "scripts": {
+    "seed": "mongosh --file seed.js",
+    "start": "mongosh --file solution.js"
+  },
+  "license": "MIT"
+}
