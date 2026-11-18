@@ -1,0 +1,7 @@
+Task 1: COLLSCAN | nReturned: 4 | totalKeysExamined: 0 | totalDocsExamined: 8
+Task 2: IXSCAN (dept_1) | nReturned: 4 | totalKeysExamined: 4 | totalDocsExamined: 4
+Task 3: Compound index dept_1_salary_-1 (no in-memory SORT) -> Hema (82000), Charan (75000), Elan (68000), Anil (60000)
+Task 4: Multikey index skills_1 (isMultiKey: true) -> Anil, Charan, Hema
+Task 5: hideIndex('skills_1') falls back to COLLSCAN; unhideIndex('skills_1') restores IXSCAN
+Task 6: Unique index on city fails (E11000 duplicate key: Chennai, Pune); created unique index on name (name_1)
+Task 7: getIndexes() returns _id_, dept_1, dept_1_salary_-1, skills_1, name_1
